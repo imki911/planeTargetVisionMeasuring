@@ -1,0 +1,7 @@
+# 机器人编队跟随的 ROS package
+基于视觉测量和PD控制,在rikirobot 4WD机器人上实现的机器人编队跟随
+# package 角色:
+* uvc_camera_pub_grey 读取CSI摄像头,转换成灰度图像并发布
+* pose_vision_estimate 根据相机图像测量与前车的相对姿态,并发布
+* fleet_pd_control 利用领航者的历史航速信息,以及时实相对姿态,PD迭代控制获得跟随者对应的航速
+* delay_test 用于网络性能测量,分为发送端程序和接收端程序. 间隔发送与cmd消息类似的msg,根据ros time 计算消息传输延迟. 

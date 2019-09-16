@@ -1,0 +1,14 @@
+用于测试节点之间简短msg的延迟. 通过header时间戳来实现.
+
+使用方法:
+1. roscore
+2. python ./server.py
+3. python ./client.py 等待自动结束
+4. Python ./plot.py
+
+文件说明:
+server.py:  msg发送服务器端, 精确每隔0.2s发送一次数据.
+
+client.py: 接收msg的客户端程序,订阅测试用的topic,通过本地rostime获得消息延迟,达到一定数量之后shutdown,并以numpy array格式写入npz文件. 代码中的全局变量sampleTiems测试的数量. 300个即60s
+
+plot.py: 读取npz文件,可视化数据值.

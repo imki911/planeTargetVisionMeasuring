@@ -1,9 +1,4 @@
-# planeTargetVisionMeasuring
-基于视觉的平面目标测量。
-# 文件说明:
-* calibrate.py 
-  根据棋盘图校准相机,结果存储为npz文件
-* measureTarget.py 
-  基于视觉的平面位置识别. 在平面上放置已知世界坐标系的marker, 机器人顶端张贴marker,拍摄成录像. 程序读入录像,通过点面定位,获得机器人的世界坐标系.
-* calibrateDataNote3.npz 存储相机镜头参数的numpy array 文件,由calibrate.py生成
-
+#　机器人编队跟随App
+* catkin_ws ROS 源程序
+* experiment 视觉测量平面目标的位置，用于评估机器人跟踪效果而写的程序
+# 详细说明见各目录下的readme
