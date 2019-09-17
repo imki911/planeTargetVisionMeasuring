@@ -7,3 +7,4 @@
   基于视觉的平面位置识别. 在平面上放置已知世界坐标系的marker, 机器人顶端张贴marker,拍摄成录像. 程序读入录像,通过点面定位,获得机器人的世界坐标系.
 * calibrateDataNote3.npz 存储相机镜头参数的numpy array 文件,由calibrate.py生成
 
+For details: https://blog.csdn.net/Imkiimki/article/details/96748686
