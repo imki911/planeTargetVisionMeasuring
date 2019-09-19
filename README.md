@@ -1,5 +1,5 @@
-# 机器人编队跟随App
-* catkin_ws ROS 源程序
-* experiment 视觉测量平面目标的位置，用于评估机器人跟踪效果而写的程序
+# Robot formation and tracking control application
+* catkin_ws: ROS pkg source code
+* experiment: Vision-based position measuring of targets in a plane. Program for evaluating the tracking effect of robots
 
-## 详细说明见各目录下的README
+## More details, refer to README in sub-folders
